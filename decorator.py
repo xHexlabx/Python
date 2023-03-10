@@ -1,4 +1,4 @@
-def wrap (func) :
+def wrap (func , func2) :
     
     def wrapping () :
         
@@ -6,12 +6,12 @@ def wrap (func) :
         
         func()
         
-        print("3")
+        print("4")
     
     return wrapping
 
 @wrap
+
 def f():
     print("2")
     
-f()
